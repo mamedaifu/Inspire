@@ -31,8 +31,16 @@ public class Service : IService
             Score = 10000
         };
 
+        ServiceTeamObj teamObj3 = new ServiceTeamObj()
+        {
+            Name = "ITS OVER",
+            Score = 9000
+        };
+
         returnTeamList.Add(teamObj1);
         returnTeamList.Add(teamObj2);
+        returnTeamList.Add(teamObj3);
+       
 
         return returnTeamList;
         //

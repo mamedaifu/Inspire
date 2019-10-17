@@ -1,12 +1,15 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    transform: scale(2);
+    transform-origin: 0 0;
+    background-color: #007bff;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+   
+
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -23,11 +26,11 @@ textarea {
     max-width: 280px;
 }
 
-.gauge {
+/*.gauge {
     display: inline-block;
     width: 100px;
     height: 100px;
-    border: 1px solid #335;
+    border: 1px solid #59CEE9;
     border-radius: 666em;
     position: relative;
 }
@@ -39,7 +42,7 @@ textarea {
         bottom: 0;
         left: 0;
         right: 0;
-        border: 10px solid #335;
+        border: 10px solid #59CEE9;
         border-radius: 666em;
         display: none;
     }
@@ -76,7 +79,7 @@ textarea {
     display: inline-block;
     width: 80px;
     height: 80px;
-    border: 1px solid #335;
+    border: 1px solid #59CEE9;
     border-radius: 666em;
     position: relative;
     background: white;
@@ -89,7 +92,7 @@ textarea {
         bottom: 0;
         left: 0;
         right: 0;
-        border: 10px solid #335;
+        border: 10px solid #59CEE9;
         border-radius: 666em;
     }
 
@@ -111,7 +114,7 @@ textarea {
         transform: rotate(-90deg)
     }
     /*180 - 180*(0.33*2)*/
-    .gauge-enhanced[data-fill="33"]::before {
+    /*.gauge-enhanced[data-fill="33"]::before {
         transform: rotate(-61.2deg)
     }
 
@@ -126,13 +129,13 @@ textarea {
     }
 
     /*180*(0.33*2)*/
-    .gauge-enhanced[data-fill="66"]::after {
+    /*.gauge-enhanced[data-fill="66"]::after {
         transform: rotate(-118.8deg)
     }
 
     .gauge-enhanced[data-fill="75"]::after {
         transform: rotate(-90deg)
-    }
+    }**//*/
 
 /*h2:nth-of-type(1), section:nth-of-type(1), h2:nth-of-type(2), section:nth-of-type(2) {
   display: none;
@@ -144,13 +147,14 @@ textarea {
     display: inline-block;
     background: rgba(0,0,0,0.05);
     position: relative;
-    border: 1px solid #335;
+    left: 10%;
+    border: 1px solid #007bff;
     text-indent: -999em;
     margin: .5em;
 }
 
     .gauge-markup::before {
-        content: attr(data-fill);
+        content: attr(data-fill-exact);
         position: absolute;
         top: 50%;
         left: 50%;
@@ -171,7 +175,8 @@ textarea {
             box-sizing: border-box;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 0%;
+            
             width: 100%;
             height: 100%;
         }
@@ -196,7 +201,7 @@ textarea {
 
             .gauge-markup span::before,
             .gauge-markup span::after {
-                border: 1em solid #335;
+                border: 1em solid #59CEE9;
                 content: '';
                 clip: rect(0, 2.5em, 5em, 0);
             }
@@ -206,30 +211,86 @@ textarea {
             }
 
         /* All the values can be computed by a css pre processor loop */
+        /*Every 5 percent will be calculated ~ Wolfen*/
         .gauge-markup[data-fill="0"] span::before {
             transform: rotate(0deg)
         }
 
-        .gauge-markup[data-fill="6"] span::before {
-            transform: rotate(10.8deg)
+        .gauge-markup[data-fill="5"] span::before {
+            transform: rotate(18deg)
+        }
+        .gauge-markup[data-fill="10"] span::before {
+            transform: rotate(36deg)
+        }
+
+        .gauge-markup[data-fill="15"] span::before {
+            transform: rotate(54deg)
+        }
+
+        .gauge-markup[data-fill="20"] span::before {
+            transform: rotate(72deg)
         }
 
         .gauge-markup[data-fill="25"] span::before {
             transform: rotate(90deg)
         }
 
+        .gauge-markup[data-fill="30"] span::before {
+            transform: rotate(108deg)
+        }
+
         .gauge-markup[data-fill="33"] span::before {
-            transform: rotate(151.2deg)
+            transform: rotate(118.8deg)
+        }
+
+        .gauge-markup[data-fill="35"] span::before {
+            transform: rotate(126deg)
+        }
+
+        .gauge-markup[data-fill="40"] span::before {
+            transform: rotate(144deg)
+        }
+        
+        .gauge-markup[data-fill="45"] span::before {
+            transform: rotate(162deg)
         }
 
         .gauge-markup[data-fill="50"] span::before {
             transform: rotate(180deg)
         }
 
-        .gauge-markup[data-fill="66"] span::after {
-            transform: rotate(-118.8deg)
+        .gauge-markup[data-fill="55"] span::after {
+            transform: rotate(-162deg)
+        }
+
+        .gauge-markup[data-fill="60"] span::after {
+            transform: rotate(-144deg)
+        }
+
+        .gauge-markup[data-fill="65"] span::after {
+            transform: rotate(-126deg)
+        }
+
+        .gauge-markup[data-fill="70"] span::after {
+            transform: rotate(-108deg)
         }
 
         .gauge-markup[data-fill="75"] span::after {
             transform: rotate(-90deg)
+        }
+
+        .gauge-markup[data-fill="80"] span::after {
+            transform: rotate(-72deg)
+        }
+
+        .gauge-markup[data-fill="85"] span::after {
+            transform: rotate(-54deg)
+        }
+
+        .gauge-markup[data-fill="95"] span::after {
+            transform: rotate(-18deg)
+        }
+
+        .gauge-markup[data-fill="90"] span::after {
+            transform: rotate(-36deg)
         }
