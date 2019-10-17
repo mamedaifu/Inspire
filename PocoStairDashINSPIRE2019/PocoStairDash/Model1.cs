@@ -11,7 +11,7 @@ namespace PocoStairDash
             : base("name=Model1")
         {
         }
-
+        public DbSet<Team> Teams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
