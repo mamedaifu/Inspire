@@ -5,11 +5,41 @@
 
 <h2>Index</h2>
 
+
+
+
 <section>
-    <div class="gauge" data-fill="@ViewBag.steps"></div>
+    <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.stepPercent><span /> </div>
+    <div>Your team have walked @ViewBag.steps with a goal of @ViewBag.mileStone!</div>
+    <div> thats @ViewBag.stepPercent percent of your goal!</div>
+
 </section>
 
-<form id="GaugeTest" action=@Html.ActionLink("StairDash", "Index", "StairDash")>
-   <input type="number" name="steps" /> 
-    <button type="submit" value="submit"></button>
-    </form>
+<form method="post" id="steps" action="/StairDash/Index">
+    <input type="number" name="steps" />
+    <button type="submit" value="submit" name="SubmitButton">Submit</button>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<table>
+    <tr>
+        <th>Team Name</th>
+        <th>Steps</th>
+        
+    </tr>
+
+    @foreach (var t in ViewBag.teams)
+    {
+        <tr>
+            <td>@t.Name</td>
+            <td>@t.Score</td>
+           
+        </tr>
+
+    }
+</table>
