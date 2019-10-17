@@ -9,7 +9,36 @@ using System.Text;
 // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service" in code, svc and config file together.
 public class Service : IService
 {
-	public string GetData(int value)
+    public List<ServiceTeamObj> GetAllData(int value)
+    {
+        //gets all objects and returns them
+        //create repo and get all
+        //transfer
+        //return
+
+        List<ServiceTeamObj> returnTeamList = new List<ServiceTeamObj>();
+
+        //TEMPORARY CODE BELOW
+        ServiceTeamObj teamObj1 = new ServiceTeamObj()
+        {
+            Name = "Hi Sam",
+            Score = 100
+        };
+
+        ServiceTeamObj teamObj2 = new ServiceTeamObj()
+        {
+            Name = "You are a ten out of",
+            Score = 10000
+        };
+
+        returnTeamList.Add(teamObj1);
+        returnTeamList.Add(teamObj2);
+
+        return returnTeamList;
+        //
+    }
+
+    public string GetData(int value)
 	{
 		return string.Format("You entered: {0}", value);
 	}
@@ -26,4 +55,15 @@ public class Service : IService
 		}
 		return composite;
 	}
+
+
+
+
 }
+
+public partial class ServiceTeamObj
+    {
+    public string Name { get; set; }
+    public float Score { get; set; }
+
+    }

@@ -12,10 +12,8 @@ public interface IService
 {
 
 	[OperationContract]
-	string GetData(int value);
+	List<ServiceTeamObj> GetAllData(int value);
 
-	[OperationContract]
-	CompositeType GetDataUsingDataContract(CompositeType composite);
 
 	// TODO: Add your service operations here
 }
@@ -26,6 +24,9 @@ public class CompositeType
 {
 	bool boolValue = true;
 	string stringValue = "Hello ";
+
+    [DataMember]
+    ServiceTeamObj transferObj;
 
 	[DataMember]
 	public bool BoolValue
