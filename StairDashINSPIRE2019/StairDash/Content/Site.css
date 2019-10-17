@@ -1,12 +1,14 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    transform: scale(2);
+    transform-origin: 0 0;
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+   
+
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -144,6 +146,7 @@ textarea {
     display: inline-block;
     background: rgba(0,0,0,0.05);
     position: relative;
+    left: 10%;
     border: 1px solid #335;
     text-indent: -999em;
     margin: .5em;
@@ -171,7 +174,8 @@ textarea {
             box-sizing: border-box;
             position: absolute;
             top: 0;
-            left: 0;
+            left: 0%;
+            
             width: 100%;
             height: 100%;
         }

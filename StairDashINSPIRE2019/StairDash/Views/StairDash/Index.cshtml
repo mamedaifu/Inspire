@@ -1,45 +1,59 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Dashboard";
 }
 
-<h2>Index</h2>
+
+<body>
 
 
+    <table>
 
+        <tr><th><h2>Stair Climber</h2></th></tr>
 
-<section>
-    <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.stepPercent><span /> </div>
-    <div>Your team have walked @ViewBag.steps with a goal of @ViewBag.mileStone!</div>
-    <div> thats @ViewBag.stepPercent percent of your goal!</div>
-
-</section>
-
-<form method="post" id="steps" action="/StairDash/Index">
-    <input type="number" name="steps" />
-    <button type="submit" value="submit" name="SubmitButton">Submit</button>
-</form>
-
-
-<br>
-<br>
-<br>
-<br>
-
-<table>
-    <tr>
-        <th>Team Name</th>
-        <th>Steps</th>
-        
-    </tr>
-
-    @foreach (var t in ViewBag.teams)
-    {
         <tr>
-            <td>@t.Name</td>
-            <td>@t.Score</td>
-           
+            <td>
+                <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.stepPercent><span /> </div>
+                <div>Your team have walked @ViewBag.steps with a goal of @ViewBag.mileStone!</div>
+                <div> thats @ViewBag.stepPercent percent of your goal!</div>
+            </td>
+
+            <td>
+                <table border="1">
+                    <tr>
+                        <th>Team Name</th>
+                        <th>Steps</th>
+
+                    </tr>
+
+                    @foreach (var t in ViewBag.teams)
+                    {
+                        <tr>
+                            <td>@t.Name</td>
+                            <td>@t.Score</td>
+
+                        </tr>
+
+                    }
+                </table>
+            </td>
+
         </tr>
 
-    }
-</table>
+
+
+        <tr>
+            <td>
+                <form method="post" id="steps" action="/StairDash/Index">
+                    <input type="number" name="steps" />
+                    <button type="submit" value="submit" name="SubmitButton">Submit</button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+    
+
+
+
+</body>
