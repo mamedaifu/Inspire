@@ -4,39 +4,24 @@
 }
 
 
-<body>
-
+<body background-color:"#007bff" !important>
+    <div style="display:inline-block;vertical-align:top;">
 
     <table>
 
-        <tr><th><h2>Stair Climber</h2></th></tr>
+        <tr>
+            <th><h2>Stair Climber</h2> <br> Hi Sam!</th>
+            
+        </tr>
 
         <tr>
             <td>
-                <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.stepPercent><span /> </div>
-                <div>Your team have walked @ViewBag.steps with a goal of @ViewBag.mileStone!</div>
-                <div> thats @ViewBag.stepPercent percent of your goal!</div>
+                <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.gaugeDisplayPercent><span /> </div>
+                <div>Your team have walked up @ViewBag.steps stairs with a milestone of @ViewBag.mileStone!</div>
+                <div> thats @ViewBag.stepPercent percent of your milestone!</div>
             </td>
 
-            <td>
-                <table border="1">
-                    <tr>
-                        <th>Team Name</th>
-                        <th>Steps</th>
-
-                    </tr>
-
-                    @foreach (var t in ViewBag.teams)
-                    {
-                        <tr>
-                            <td>@t.Name</td>
-                            <td>@t.Score</td>
-
-                        </tr>
-
-                    }
-                </table>
-            </td>
+           
 
         </tr>
 
@@ -53,7 +38,29 @@
 
     </table>
     
+        </div>
 
+    <div style="display:inline-block;">
+        
+            <table border="1">
+                <tr>
+                    <th>Team Name</th>
+                    <th>Steps</th>
+
+                </tr>
+
+                @foreach (var t in ViewBag.teams)
+                {
+                    <tr>
+                        <td>@t.Name</td>
+                        <td>@t.Score</td>
+
+                    </tr>
+
+                }
+            </table>
+        
+        </div>
 
 
 </body>

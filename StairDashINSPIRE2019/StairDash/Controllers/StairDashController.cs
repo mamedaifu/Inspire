@@ -33,13 +33,8 @@ namespace StairDash.Controllers
                     list[i] = placeholder;
                 }
 
-
                 i++;
             }
-
-
-           
-
 
 
             if (steps == null)
@@ -52,8 +47,21 @@ namespace StairDash.Controllers
                 ViewBag.steps = steps;
             }
 
-            ViewBag.stepPercent = percent = (((float)steps / (float)mileStone) * 100.0f);
+             percent = (((float)steps / (float)mileStone) * 100.0f);
+            percent = (float)Math.Round(percent, 1);
+            ViewBag.stepPercent = percent;
+
+            if (percent > 100)
+            {
+                percent = 100;
+            }
+
             ViewBag.gaugePercent = Math.Round(percent / 5.0) * 5;
+            ViewBag.gaugeDisplayPercent = percent;
+
+
+
+
             ViewBag.mileStone = mileStone;
             ViewBag.teams = list;
 

@@ -3,6 +3,7 @@
     padding-bottom: 20px;
     transform: scale(2);
     transform-origin: 0 0;
+    background-color: #007bff;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -25,11 +26,11 @@ textarea {
     max-width: 280px;
 }
 
-.gauge {
+/*.gauge {
     display: inline-block;
     width: 100px;
     height: 100px;
-    border: 1px solid #335;
+    border: 1px solid #59CEE9;
     border-radius: 666em;
     position: relative;
 }
@@ -41,7 +42,7 @@ textarea {
         bottom: 0;
         left: 0;
         right: 0;
-        border: 10px solid #335;
+        border: 10px solid #59CEE9;
         border-radius: 666em;
         display: none;
     }
@@ -78,7 +79,7 @@ textarea {
     display: inline-block;
     width: 80px;
     height: 80px;
-    border: 1px solid #335;
+    border: 1px solid #59CEE9;
     border-radius: 666em;
     position: relative;
     background: white;
@@ -91,7 +92,7 @@ textarea {
         bottom: 0;
         left: 0;
         right: 0;
-        border: 10px solid #335;
+        border: 10px solid #59CEE9;
         border-radius: 666em;
     }
 
@@ -113,7 +114,7 @@ textarea {
         transform: rotate(-90deg)
     }
     /*180 - 180*(0.33*2)*/
-    .gauge-enhanced[data-fill="33"]::before {
+    /*.gauge-enhanced[data-fill="33"]::before {
         transform: rotate(-61.2deg)
     }
 
@@ -128,13 +129,13 @@ textarea {
     }
 
     /*180*(0.33*2)*/
-    .gauge-enhanced[data-fill="66"]::after {
+    /*.gauge-enhanced[data-fill="66"]::after {
         transform: rotate(-118.8deg)
     }
 
     .gauge-enhanced[data-fill="75"]::after {
         transform: rotate(-90deg)
-    }
+    }**//*/
 
 /*h2:nth-of-type(1), section:nth-of-type(1), h2:nth-of-type(2), section:nth-of-type(2) {
   display: none;
@@ -147,7 +148,7 @@ textarea {
     background: rgba(0,0,0,0.05);
     position: relative;
     left: 10%;
-    border: 1px solid #335;
+    border: 1px solid #007bff;
     text-indent: -999em;
     margin: .5em;
 }
@@ -200,7 +201,7 @@ textarea {
 
             .gauge-markup span::before,
             .gauge-markup span::after {
-                border: 1em solid #335;
+                border: 1em solid #59CEE9;
                 content: '';
                 clip: rect(0, 2.5em, 5em, 0);
             }
