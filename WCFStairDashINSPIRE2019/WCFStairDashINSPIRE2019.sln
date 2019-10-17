@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFStairDash", "WCFStairDash\", "{E8FD9AC3-B9B4-4EAD-83F1-A8FE2E4AC998}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_2646"
+		Debug.AspNetCompiler.PhysicalPath = "WCFStairDash\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2646\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_2646"
+		Release.AspNetCompiler.PhysicalPath = "WCFStairDash\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_2646\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2646"
+		SlnRelativePath = "WCFStairDash\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8FD9AC3-B9B4-4EAD-83F1-A8FE2E4AC998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8FD9AC3-B9B4-4EAD-83F1-A8FE2E4AC998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4ABF78F6-E003-47CA-9028-4A5C578FC893}
+	EndGlobalSection
+EndGlobal

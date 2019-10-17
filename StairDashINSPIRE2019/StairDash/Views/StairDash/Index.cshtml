@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<section>
+    <div class="gauge" data-fill="@ViewBag.steps"></div>
+</section>
+
+<form id="GaugeTest" action=@Html.ActionLink("StairDash", "Index", "StairDash")>
+   <input type="number" name="steps" /> 
+    <button type="submit" value="submit"></button>
+    </form>
