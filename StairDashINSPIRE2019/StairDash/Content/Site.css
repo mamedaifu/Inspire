@@ -3,7 +3,13 @@
     padding-bottom: 20px;
     transform: scale(2);
     transform-origin: 0 0;
-    background-color: #007bff;
+    background-color: #0b0a18;
+    color:white;
+}
+
+button
+{
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -148,7 +154,7 @@ textarea {
     background: rgba(0,0,0,0.05);
     position: relative;
     left: 10%;
-    border: 1px solid #007bff;
+    border: 1px solid #59CEE9 ;
     text-indent: -999em;
     margin: .5em;
 }

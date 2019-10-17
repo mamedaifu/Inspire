@@ -4,44 +4,44 @@
 }
 
 
-<body background-color:"#007bff" !important>
-    <div style="display:inline-block;vertical-align:top;">
+    <body background-color:"#007bff" !important>
+        <div style="display:inline-block;vertical-align:top;">
 
-    <table>
+            <table>
 
-        <tr>
-            <th><h2>Stair Climber</h2> <br> Hi Sam!</th>
-            
-        </tr>
+                <tr>
+                    <th><h2>Stair Climber</h2> <br> Hi Sam!</th>
 
-        <tr>
-            <td>
-                <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.gaugeDisplayPercent><span /> </div>
-                <div>Your team have walked up @ViewBag.steps stairs with a milestone of @ViewBag.mileStone!</div>
-                <div> thats @ViewBag.stepPercent percent of your milestone!</div>
-            </td>
+                </tr>
 
-           
-
-        </tr>
+                <tr>
+                    <td>
+                        <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.gaugeDisplayPercent><span /> </div>
+                        <div>Your team have walked up @ViewBag.steps stairs with a milestone of @ViewBag.mileStone!</div>
+                        <div> thats @ViewBag.stepPercent percent of your milestone!</div>
+                    </td>
 
 
 
-        <tr>
-            <td>
-                <form method="post" id="steps" action="/StairDash/Index">
-                    <input type="number" name="steps" />
-                    <button type="submit" value="submit" name="SubmitButton">Submit</button>
-                </form>
-            </td>
-        </tr>
+                </tr>
 
-    </table>
-    
+
+
+                <tr>
+                    <td>
+                        <form method="post" id="steps" action="/StairDash/Index">
+                            <input type="number" name="steps" />
+                            <button type="submit" value="submit" name="SubmitButton">Submit</button>
+                        </form>
+                    </td>
+                </tr>
+
+            </table>
+
         </div>
 
-    <div style="display:inline-block;">
-        
+        <div style="display:inline-block;">
+
             <table border="1">
                 <tr>
                     <th>Team Name</th>
@@ -59,8 +59,12 @@
 
                 }
             </table>
-        
+
+        </div>
+
+        <div class="w3-border">
+            <div class="w3-grey" style="height:24px;width:20%"></div>
         </div>
 
 
-</body>
+    </body>
