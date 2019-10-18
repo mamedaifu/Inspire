@@ -17,7 +17,7 @@
                 <tr>
                     <td>
                         <div class="gauge-markup" data-fill=@ViewBag.gaugePercent data-fill-exact=@ViewBag.gaugeDisplayPercent><span /> </div>
-                        <div>Your team have walked up @ViewBag.steps stairs with a milestone of @ViewBag.mileStone!</div>
+                        <div>Your team have walked up @ViewBag.steps levels with a milestone of @ViewBag.mileStone!</div>
                         <div> thats @ViewBag.stepPercent percent of your milestone!</div>
                     </td>
 
@@ -27,14 +27,14 @@
 
 
 
-                <tr>
+                @*<tr>
                     <td>
                         <form method="post" id="steps" action="/StairDash/Index">
                             <input type="number" name="steps" />
                             <button type="submit" value="submit" name="SubmitButton">Submit</button>
                         </form>
                     </td>
-                </tr>
+                </tr>*@
 
             </table>
 

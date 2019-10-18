@@ -19,7 +19,7 @@ namespace StairDash.Controllers
 
 
 
-            int mileStone = 8000;
+            int mileStone = 300;
             float percent;
             
             var list = srv.GetAllData(0);
@@ -50,6 +50,12 @@ namespace StairDash.Controllers
             {
                 ViewBag.steps = steps;
             }
+
+
+            steps = 122;
+            ViewBag.steps = steps;
+
+
 
             percent = (((float)steps / (float)mileStone) * 100.0f);
             percent = (float)Math.Round(percent, 1);

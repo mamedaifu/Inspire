@@ -5,39 +5,40 @@
 
 <h2>TeamView</h2>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<div class="w3-container">
-
-    <div class="w3-light-grey">
-        <div class="w3-light-blue" style="height:24px;width:25%"></div>
-    </div><br>
-
-    <div class="w3-light-grey">
-        <div class="w3-green" style="height:24px;width:75%"></div>
-    </div><br>
 
 
+<table border="1">
+    <tr>
+        <th>Team Name</th>
+        <th>Steps</th>
+        <th>________________</th>
 
 
-    <table border="1">
+    </tr>
+
+    @foreach (var t in ViewBag.teams)
+    {
         <tr>
-            <th>Team Name</th>
-            <th>Steps</th>
+            <td>@t.Name</td>
+            <td>@t.Score</td>
+            <td>
+                <div class="w3-container">
+
+                    <div class="w3-light-grey">
+                        <div class="w3-light-blue" style="height:12px;width:25%"></div>
+                    </div><br>
+
+
+                </div>
+            </td>
 
         </tr>
 
-        @foreach (var t in ViewBag.teams)
-        {
-            <tr>
-                <td>@t.Name</td>
-                <td>@t.Score</td>
+    }
+</table>
 
-            </tr>
-
-        }
-    </table>
-
-</div>
+    <
 
