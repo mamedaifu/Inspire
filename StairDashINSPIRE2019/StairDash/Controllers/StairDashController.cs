@@ -17,7 +17,7 @@ namespace StairDash.Controllers
         {
             StairDataServiceReference.ServiceClient srv = new StairDataServiceReference.ServiceClient();
 
-            
+
 
             int mileStone = 8000;
             float percent;
@@ -27,9 +27,9 @@ namespace StairDash.Controllers
             var placeholder = list[0];
 
 
-            while(i<list.Length)
+            while (i < list.Length)
             {
-                if (list[i].Score > list[i-1].Score)
+                if (list[i].Score > list[i - 1].Score)
                 {
                     placeholder = list[i - 1];
                     list[i - 1] = list[i];
@@ -50,7 +50,7 @@ namespace StairDash.Controllers
                 ViewBag.steps = steps;
             }
 
-             percent = (((float)steps / (float)mileStone) * 100.0f);
+            percent = (((float)steps / (float)mileStone) * 100.0f);
             percent = (float)Math.Round(percent, 1);
             ViewBag.stepPercent = percent;
 
@@ -74,6 +74,9 @@ namespace StairDash.Controllers
 
         public ActionResult TeamView()
         {
+            StairDataServiceReference.ServiceClient srv = new StairDataServiceReference.ServiceClient();
+
+            var list = SortTeams(srv.GetAllData(0));
 
             ViewBag.teams = list;
 
@@ -81,7 +84,7 @@ namespace StairDash.Controllers
         }
 
 
-        private StairDataServiceReference.ServiceTeamObj[] SortTeams(ServiceTeamObj[] list )
+        private StairDataServiceReference.ServiceTeamObj[] SortTeams(ServiceTeamObj[] list)
         {
             var newlist = list;
             int i = 1;
@@ -89,31 +92,25 @@ namespace StairDash.Controllers
             var placeholder = list[0];
 
             var loop = true;
-            while (loop)
-            {
-                while (n < list.Length)
-                {
-                    while (i < list.Length)
-                    {
-                        if (list[i].Score > list[i - 1].Score)
-                        {
-                            placeholder = list[i - 1];
-                            list[i - 1] = list[i];
-                            list[i] = placeholder;
-                        }
 
-                        i++;
+            while (n < list.Length)
+            {
+                while (i < list.Length)
+                {
+                    if (list[i].Score > list[i - 1].Score)
+                    {
+                        placeholder = list[i - 1];
+                        list[i - 1] = list[i];
+                        list[i] = placeholder;
                     }
 
-                    n++;
+                    i++;
                 }
 
-                if(list.Max == list[0])
-                {
-
-                }
-
+                n++;
             }
+
+
 
             return list;
         }
