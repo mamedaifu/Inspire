@@ -21,6 +21,7 @@ namespace StairDash.Controllers
 
             int mileStone = 8000;
             float percent;
+            
             var list = srv.GetAllData(0);
             var sortedList = list;
             int i = 1;
