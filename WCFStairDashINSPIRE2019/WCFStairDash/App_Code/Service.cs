@@ -21,26 +21,33 @@ public class Service : IService
         //TEMPORARY CODE BELOW
         ServiceTeamObj teamObj1 = new ServiceTeamObj()
         {
-            Name = "Hi Sam",
-            Score = 100
+            Name = "CRM Platform Team",
+            Score = 164
         };
 
         ServiceTeamObj teamObj2 = new ServiceTeamObj()
         {
-            Name = "You are a ten out of",
-            Score = 10000
+            Name = "Integration and DevOps Engineering",
+            Score = 122
         };
 
         ServiceTeamObj teamObj3 = new ServiceTeamObj()
         {
-            Name = "ITS OVER",
-            Score = 9000
+            Name = "Architecture Team",
+            Score = 88
         };
+
+        ServiceTeamObj teamObj4 = new ServiceTeamObj()
+        {
+            Name = "Sales Team",
+            Score = 65
+        };
+
 
         returnTeamList.Add(teamObj1);
         returnTeamList.Add(teamObj2);
         returnTeamList.Add(teamObj3);
-       
+        returnTeamList.Add(teamObj4);
 
         return returnTeamList;
         //
