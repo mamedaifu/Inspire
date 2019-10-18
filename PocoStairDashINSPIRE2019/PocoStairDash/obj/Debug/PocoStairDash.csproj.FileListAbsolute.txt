@@ -13,3 +13,17 @@ C:\Users\awong1\source\repos\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\
 C:\Users\awong1\source\repos\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.pdb
 C:\Users\awong1\source\repos\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.Migrations.initializeteamtable.resources
 C:\Users\awong1\source\repos\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.csproj.GenerateResource.cache
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\PocoStairDash.dll.config
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\PocoStairDash.dll
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\PocoStairDash.pdb
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\EntityFramework.dll
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\EntityFramework.xml
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.csprojAssemblyReference.cache
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.csproj.CoreCompileInputs.cache
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.csproj.CopyComplete
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.dll
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.pdb
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.Migrations.initializationteamtable.resources
+C:\Users\WYZ\Desktop\Inspire\PocoStairDashINSPIRE2019\PocoStairDash\obj\Debug\PocoStairDash.csproj.GenerateResource.cache

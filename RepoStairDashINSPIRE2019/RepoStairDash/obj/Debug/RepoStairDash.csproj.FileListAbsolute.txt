@@ -1,0 +1,14 @@
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\RepoStairDash.dll.config
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\RepoStairDash.dll
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\RepoStairDash.pdb
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\EntityFramework.dll
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\PocoStairDash.dll
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\EntityFramework.xml
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\PocoStairDash.pdb
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\bin\Debug\PocoStairDash.dll.config
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\obj\Debug\RepoStairDash.csprojAssemblyReference.cache
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\obj\Debug\RepoStairDash.csproj.CopyComplete
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\obj\Debug\RepoStairDash.dll
+C:\Users\tbeven1\Documents\LocalProjects\Inspire\RepoStairDashINSPIRE2019\RepoStairDash\obj\Debug\RepoStairDash.pdb
