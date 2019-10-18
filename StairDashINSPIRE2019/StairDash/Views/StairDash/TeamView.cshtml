@@ -15,5 +15,26 @@
         <div class="w3-green" style="height:24px;width:75%"></div>
     </div><br>
 
+
+
+
+    <table border="1">
+        <tr>
+            <th>Team Name</th>
+            <th>Steps</th>
+
+        </tr>
+
+        @foreach (var t in ViewBag.teams)
+        {
+            <tr>
+                <td>@t.Name</td>
+                <td>@t.Score</td>
+
+            </tr>
+
+        }
+    </table>
+
 </div>
 
