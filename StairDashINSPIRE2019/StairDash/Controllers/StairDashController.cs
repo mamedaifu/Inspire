@@ -67,5 +67,11 @@ namespace StairDash.Controllers
 
             return View();
         }
+
+
+        public ActionResult TeamView()
+        {
+            return View();
+        }
     }
 }
